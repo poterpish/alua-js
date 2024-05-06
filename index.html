@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marvel:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img class="icon" src="/img/contact-person-red-icon-free-png.webp" alt="">
+            <img class="logo" src="/img/new-marvel-studios-logo-debuted-marvelstudios-3.png" alt="">
+            <img class="search" src="/img/1200px-VisualEditor_-_Icon_-_Search-big_-_white.svg.png" alt="">
+        </header>
+
+        <nav class="nav">
+            <ul class="ul">
+                <li> <a href="index.html" class="comicsBtn"> Home </a> </li>
+                <li> <a href="#" id="characters" class="charactersBtn"> Characters </a> </li>
+                <li> <a href="#" id="comics" class="comicsBtn"> Comics </a> </li>
+                <li> <a href="#" id="series" class="seriesBtn"> Series </a> </li>
+            </ul>   
+        </nav>
+    
+        <div class="burger-menu">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </div> 
+
+        <div class="search-div">
+            <h1 class="header-main-title">Marvel Comics Character Search</h1>
+            <div class="input-container">
+                <input type="text" class="input" placeholder="Iron man, Hulk, etc..." value="" id="input-box" />
+                <button class="button" id="submit-button">Submit</button>
+            </div>
+            <div class="list"></div>
+            <div class="display-container" id="show-container"></div>
+            <div class="comics-container" id="comics-container"></div>
+        </div>
+
+        <div class="charactersDiv"> </div>
+        <div class="comicsDiv"> </div>
+        <div class="seriesDiv"> </div>
+
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
