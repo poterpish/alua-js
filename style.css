@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
+    background-color: rgb(32, 32, 32);
+    padding: 20px;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(32, 32, 32);
+    padding: 10px 20px;
+}
+
+.nav {  
+    padding: 10px;
+    background-color: rgb(32, 32, 32);
+    border: 2px solid gray;
+}
+
+.error {
+  padding: 10px 15px;
+  color: white;
+  font-family: "Marvel", sans-serif;
+}
+.ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: "Marvel", sans-serif;
+}
+
+.logo {
+    width: 300px;
+    height: 70px;
+}
+
+.icon {
+    width: 30px;
+}
+
+.search {
+    width: 30px;
+}
+/*--*/
+
+.search-div {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20%;
+    gap: 10px;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    padding: 0 15px;
+}
+
+.header-main-title {
+    font-family: "Marvel", sans-serif;
+    padding: 0 15px;
+    color: white;
+}
+.input{
+    border-radius: 0;
+    padding: 10px;
+    width: 100%;
+}
+.button {
+    background-color: #ED462F;
+    padding: 10px;
+    width: 120px;
+}
+
+/*--*/
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}
+
+.name-desc {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.display-container {
+    padding: 1em;
+}
+
+.character-image img {
+    width: 100%;
+    position: relative;
+    width: block;
+    border-radius: 2px;  
+}
+
+.character-name {
+    padding: 0.5em 0 0.8em 0;
+    text-align: start;
+    color:  #ffffff;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 600;
+    font-family: "Marvel", sans-serif;
+}
+
+.character-description {
+    text-align: start;
+    color: #ffffff;
+    line-height: 2em;
+    font-weight: 300; 
+    font-family: serif;
+}
+
+button {
+    font-family: serif;
+}
+
+.list {
+    position: absolute;
+    width: 64%;
+    background-color: #555;
+    color: #ffffff;
+    z-index: 1;
+}
+
+.autocomplete-items {
+    padding: 0.5em;
+}
+
+.autocomplete-items:hover {
+    background-color: #ddd;
+    color: #171821;
+}
+
+/*---*/
+.comics-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.comics-card {
+    width: 250px;
+    background-color: white;
+}
+
+.comics-card img {
+    width: 250px;
+}
+
+.comics-title {
+    padding: 10px;
+    font-family: "Marvel", sans-serif;
+    margin-bottom: 10px;
+}
+
+.comics-desc {
+    font-family: "Marvel", sans-serif;
+    padding: 10px;
+}
+
+/*--*/
+
+.charactersDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 50px;
+}
+
+.charac-card {
+  width: 250px;
+  background-color: white;
+}
+
+.charac-card img {
+  width: 250px;
+}
+
+.charac-name {
+  padding: 10px;
+  font-family: "Marvel", sans-serif;
+  margin-bottom: 10px;
+}
+
+.charac-desc {
+  font-family: "Marvel", sans-serif;
+  padding: 10px;
+}
+/*--*/
+
+.seriesDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 50px;
+}
+  
+.series-card {
+    width: 250px;
+    background-color: white;
+}
+  
+.series-name {
+    padding: 10px;
+    font-family: "Marvel", sans-serif;
+    margin-bottom: 10px;
+}
+  
+.series-desc {
+    font-family: "Marvel", sans-serif;
+    padding: 10px;
+}
+
+/*--*/
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger-line {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/*--*/
+
+@media screen and (max-width: 320px) {
+    .header {
+        padding: 10px 5px;
+    }
+    .logo {
+        width: 150px;
+    }
+    .icon, .search {
+        width: 15px;
+    }
+    .nav {        
+        display: none;
+    }
+    .ul {
+        display: none;
+    }
+    .burger-menu {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .burger-menu {
+        display: flex;
+    }
+    .header {
+        padding: 10px 10px;
+    }
+
+    .logo {
+        width: 200px;
+    }
+    .icon, .search {
+        width: 20px;
+    }
+    .nav {
+        display: none;
+    }
+    .ul {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header {
+        padding: 10px 15px;
+    }
+    .logo {
+        width: 250px;
+    }
+}
+
+/*--*/
